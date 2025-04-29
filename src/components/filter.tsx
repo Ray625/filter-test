@@ -92,7 +92,7 @@ const Filter = ({ isClosing, setIsClosing }: { isClosing: boolean, setIsClosing:
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-screen md:h-fit lg:relative lg:max-w-[1140px] px-4 py-16 lg:py-0 mx-auto text-font-color bg-backgrond-color md:shadow-md lg:shadow-none"
+      className="fixed top-0 left-0 w-full h-screen md:h-fit lg:relative lg:max-w-[1140px] px-4 pt-16 pb-4 lg:py-0 mx-auto text-font-color bg-backgrond-color md:shadow-md lg:shadow-none"
       style={{
         transform: `${isClosing ? "translateX(100%)" : ""}`,
         transition: `${isClosing ? "opacity 0s ease 0.3s" : ""}`,
