@@ -92,7 +92,7 @@ const Filter = ({ isClosing, setIsClosing }: { isClosing: boolean, setIsClosing:
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-screen md:h-fit lg:relative lg:max-w-[1140px] px-4 pt-16 pb-4 lg:py-0 mx-auto text-font-color bg-backgrond-color md:shadow-md lg:shadow-none"
+      className="fixed top-0 left-0 w-full h-screen md:h-fit lg:relative lg:max-w-[1140px] px-4 pt-16 pb-4 lg:py-0 mx-auto text-font-color bg-backgrond-color md:shadow-md lg:shadow-none overflow-y-scroll"
       style={{
         transform: `${isClosing ? "translateX(100%)" : ""}`,
         transition: `${isClosing ? "opacity 0s ease 0.3s" : ""}`,
@@ -202,7 +202,7 @@ const Filter = ({ isClosing, setIsClosing }: { isClosing: boolean, setIsClosing:
           }
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 md:relative flex flex-row justify-between lg:justify-end w-full px-4 md:px-6 py-4 lg:px-4 lg:py-3 lg:-translate-y-full md:text-end md:pointer-events-none ">
+      <div className="fixed bottom-0 left-0 md:relative flex flex-row justify-between lg:justify-end w-full px-4 md:px-6 py-4 lg:px-4 lg:py-3 lg:-translate-y-full md:text-end md:pointer-events-none bg-backgrond-color z-10 shadow-[0_-1px_16px_-1px_rgba(0,0,0,0.2)] md:shadow-none">
         <button
           className="relative px-2 py-1 after:bg-translate after:absolute after:bottom-0 after:left-1/10 after:w-8/10 after:h-[2px] lg:hover:after:bg-border-color lg:hover:opacity-70 pointer-events-auto"
           onClick={handleClearFliter}
