@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-font-color: rgb(89, 87, 87);
+  --color-h-color: #333;
+  --color-active-color: #e7465a;
+  --color-backgrond-color: #f8f8f8;
+  --color-border-color: #cac8c8;
+  --color-selected-color: #3885f5;
+  --color-unSelected-color: #eee;
+  --color-list-border: hsla(0, 0%, 73.7%, .9333333333);
+  --color-list-text: rgba(88, 86, 86, .9333333333);
+}
+
+@layer utilities {
+  .noto-sans-tc {
+    font-family: "Noto Sans TC", sans-serif;
+  }
+}
